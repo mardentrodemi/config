@@ -1,0 +1,103 @@
+    window-rule {
+        geometry-corner-radius 10
+        clip-to-geometry true
+        open-maximized false
+        open-maximized-to-edges false
+    }
+
+    layer-rule {
+        match namespace="^noctalia-wallpaper*"
+        place-within-backdrop true
+    }
+
+    workspace "1"
+    workspace "2"
+    workspace "3"
+    workspace "4"
+    workspace "5"
+    workspace "6"
+
+    // workspace 2
+    window-rule {
+        match app-id="codium"
+            open-on-workspace "2"
+            open-maximized false
+                border {
+                    active-color "#436c82"
+                    inactive-color "#505050"
+        }
+    }
+
+    window-rule {
+        match app-id="SmartGit"
+            open-on-workspace "2"
+            open-maximized false
+    }
+
+    // workspace 3
+    window-rule {
+        match app-id="librewolf"
+            open-on-workspace "3"
+            open-maximized true
+            open-maximized-to-edges false
+    }
+
+    // workspace 4
+    window-rule {
+        match app-id="Element"
+            open-on-workspace "4"
+            open-maximized false
+            open-maximized-to-edges false
+    }
+
+    window-rule {
+        match app-id="org.telegram.desktop"
+            open-on-workspace "4"
+            open-maximized false
+            open-maximized-to-edges false
+            default-column-width { proportion 0.5; }
+    }
+
+    // workspace 5
+    window-rule {
+        match app-id="vlc"
+            open-on-workspace "5"
+            open-maximized false
+            open-maximized-to-edges false
+            default-column-width { proportion 0.5; }
+    }
+
+    window-rule {
+        match app-id="spotify"
+            open-on-workspace "5"
+            open-maximized false
+            open-maximized-to-edges false
+    }
+
+    // workspace 6
+    window-rule {
+        match app-id="obsidian"
+            open-on-workspace "6"
+            open-maximized false
+            open-maximized-to-edges false
+    }
+
+    window-rule {
+        match app-id="org.keepassxc.KeePassXC"
+            open-on-workspace "6"
+            open-maximized false
+            open-maximized-to-edges false
+            default-column-width { proportion 0.66667; }
+    }
+
+    window-rule {
+        match app-id="MEGAsync"
+            open-on-workspace "6"
+            default-column-width { proportion 0.33333; }
+    }
+
+    // any workspace
+    window-rule {
+        match app-id="nemo"
+            default-column-width { proportion 0.5; }
+    }

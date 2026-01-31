@@ -1,0 +1,9 @@
+// ────────────── Startup Applications ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+
+    spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
+    spawn-sh-at-startup "qs -c noctalia-shell"
+    spawn-at-startup "opensnitch-ui"
+    spawn-sh-at-startup "wl-gammactl -c 0.925 -b 1.040 -g 1.040"
+    spawn-sh-at-startup "niri msg action focus-workspace 3"
+    spawn-at-startup "librewolf"
