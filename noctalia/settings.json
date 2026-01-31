@@ -169,7 +169,7 @@
                     "useDistroLogo": false
                 },
                 {
-                    "displayMode": "onhover",
+                    "displayMode": "alwaysShow",
                     "id": "Volume",
                     "middleClickCommand": "pwvucontrol || pavucontrol"
                 },
