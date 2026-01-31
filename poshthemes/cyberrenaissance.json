@@ -40,7 +40,7 @@
             "fetch_upstream_icon": true
           },
           "trailing_diamond": "\ue0bc",
-          "template": " ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+          "template": " <b>({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }})</b> ",
           "foreground": "#1f1f1f",
           "background": "#CFA561",
           "type": "git",
@@ -51,7 +51,7 @@
             "cache_duration": "none"
           },
           "trailing_diamond": "\ue0bc",
-          "template": " \ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": " <b>\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}</b> ",
           "foreground": "#1f1f1f",
           "background": "#CFA561",
           "type": "python",
